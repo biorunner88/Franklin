@@ -1,0 +1,16 @@
+dominant_offsprings = 4 * scipy.misc.comb(k,2) + 4 * scipy.misc.comb(k+m,2) + 3 * scipy.misc.comb(m+m,2) + 2 * scipy.misc.comb(m+n,2) + 2 * scipy.misc.comb(k+n,2)
+
+print dominant_offsprings/offsprings#!/usr/bin/python
+
+from scipy.misc import comb
+
+k = 2
+m = 2
+n = 2
+
+#Number of possible crossings times number of possible phenotypes (4)
+offsprings = 4 * comb(k + m + n, 2)
+
+dominant_offsprings = 4 * scipy.misc.comb(k,2) + 4 * scipy.misc.comb(k+m,2) + 3 * scipy.misc.comb(m+m,2) + 2 * scipy.misc.comb(m+n,2) + 2 * scipy.misc.comb(k+n,2) 
+
+print dominant_offsprings/offsprings
